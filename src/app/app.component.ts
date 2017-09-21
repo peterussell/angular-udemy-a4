@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'The Game';
+  oddNumbers: number[] = [];
+  evenNumbers: number[] = [];
+
+  onCounterTick(e: { counterVal: number }) {
+    if (e.counterVal % 2 == 0) {
+      this.evenNumbers.push(e.counterVal);
+    } else {
+      this.oddNumbers.push(e.counterVal);
+    }
+  }
 }

@@ -1,14 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { GameControlComponent } from './game-control/game-control.component';
+import { EvenRendererComponent } from './even-renderer/even-renderer.component';
+import { OddRendererComponent } from './odd-renderer/odd-renderer.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GameControlComponent,
+    EvenRendererComponent,
+    OddRendererComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
