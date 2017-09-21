@@ -11,7 +11,7 @@ export class AppComponent {
   evenNumbers: number[] = [];
 
   onCounterTick(e: { counterVal: number }) {
-    if (e.counterVal % 2 == 0) {
+    if (e.counterVal % 2 === 0) {
       this.evenNumbers.push(e.counterVal);
     } else {
       this.oddNumbers.push(e.counterVal);
